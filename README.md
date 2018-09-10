@@ -96,3 +96,9 @@ The **Diff** link will take you to a Github diff as seen below:
 All of the code that was added in the solution is in green, and the removed code (which will usually be the TODO comments) is in red. 
 ## Report Issues
 Notice any issues with a repository? Please file a github issue in the repository.
+
+修复 Push failed: Failed with error: Could not read from remote repository. 这个BUG (如果这交提交成功，表示真的修好了)
+1、生成 SSH keys  添加到 GitHub （这个网上到处都有说明）
+2、Settings > Version Control > GitHub > AuthType 改成 Token
+3、Create API Token
+4、Settings > Version Control > Git > SSH executable: Native
