@@ -27,9 +27,11 @@ import java.util.List;
 
 
 // Custom adapter class that displays a list of Android-Me images in a GridView
+// 自定义的适配器类，用于在 GridView 中显示 Android-Me 的图片列表 （头，身，足）
 public class MasterListAdapter extends BaseAdapter {
 
     // Keeps track of the context and list of images to display
+    // 记录上下文和图片列表，用于显示
     private Context mContext;
     private List<Integer> mImageIds;
 
@@ -62,7 +64,9 @@ public class MasterListAdapter extends BaseAdapter {
 
     /**
      * Creates a new ImageView for each item referenced by the adapter
+     * 为适配器引用的每个项创建一个新的ImageView
      */
+    @Override
     public View getView(final int position, View convertView, ViewGroup parent) {
         ImageView imageView;
         if (convertView == null) {
